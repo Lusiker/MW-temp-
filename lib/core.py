@@ -29,7 +29,7 @@ class Core():
 
     def screen_initialize(self,event_queue):
         '''
-            the function initializes all screen objects in the screen module
+            this function initializes all screen objects in the screen module
             throung a list holding all the constructor of the screens
         '''
         self.screen_list = []

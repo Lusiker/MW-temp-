@@ -6,7 +6,7 @@
 
 ***
 ## Dev Diaries:
-### 21/06/05:
+### 21/06/15:
     --version 0.1.0--
     1.you can now play W1-1
     (clicking W1-2 will cause crash)
