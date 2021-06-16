@@ -7,14 +7,6 @@ import collections
 import lib.settings
 
 
-class Character_Event:
-    def __init__(self,name,time,need_time,event_type):
-        self.name = name
-        self.time = time
-        self.need_time = need_time
-        self.event_type = event_type
-
-
 class Character_Base(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -63,7 +55,7 @@ class Main_Character(Character_Base):
         self.hp = 100
         self.mp = 100
         self.max_mp = 100
-        self.delt_mp = 0.1
+        self.delt_mp = 0.3
         self.mp_recovery = 0.0
         self.hori_speed = 2.8
         self.vert_speed = 0.0

@@ -1191,7 +1191,7 @@ class Level_0101(Screen_Base):
             if self.end_intro != 1:
                 self.end_intro = 1
         
-        if self.target_counter == self.victory_limit:
+        if self.target_counter >= self.victory_limit:
             return 1
         elif self.character.hp <= 0:
             return -1
@@ -1491,14 +1491,14 @@ class Victory(Screen_Base):
         self.new_kill_rect   = self.new_kill_img.get_rect()
         self.new_bullet_rect = self.new_bullet_img.get_rect()
         self.new_damage_rect = self.new_damage_img.get_rect()
-        self.new_score_rect.left = 10
+        self.new_score_rect.centerx = 800
         self.new_score_rect.centery = 300
-        self.new_kill_rect.left     = self.new_score_rect.left
-        self.new_kill_rect.top      = self.new_score_rect.bottom + 10
-        self.new_bullet_rect.left   = self.new_score_rect.left
-        self.new_bullet_rect.top    = self.new_kill_rect.bottom + 10
-        self.new_damage_rect.left   = self.new_score_rect.left
-        self.new_damage_rect.top    = self.new_bullet_rect.bottom + 10
+        self.new_kill_rect.centerx     = self.new_score_rect.centerx
+        self.new_kill_rect.top         = self.new_score_rect.bottom + 10
+        self.new_bullet_rect.centerx   = self.new_score_rect.centerx
+        self.new_bullet_rect.top       = self.new_kill_rect.bottom + 10
+        self.new_damage_rect.centerx   = self.new_score_rect.centerx
+        self.new_damage_rect.top       = self.new_bullet_rect.bottom + 10
 
     def sleep(self):
         self.state  = -1

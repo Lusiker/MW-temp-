@@ -102,7 +102,7 @@ class Save_Reader:
                 new_player.load(file_name)
                 self.player_group.append(new_player)
         
-        self.player_group.sort(key = lambda x : x.time,reverse = True)
+        self.player_group.sort(key = lambda x : x.last_changed,reverse = True)
     
     def player_count(self):
         return len(self.player_group)
