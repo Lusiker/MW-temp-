@@ -7,7 +7,7 @@ import time
 class Settings():
     def __init__(self):
         self.game_info = {
-                            'name' : 'MiniGameWare',
+                            'name' : 'MiniWarbot',
                             'version' : '0.1.0',
                             'size' : (1600,900),
                             'icon' : pygame.image.load('lib/images/mgw_icon.bmp'),
@@ -211,7 +211,7 @@ class Settings():
             'g0101' : {
                 'id' : 0,
                 'platform' : [
-                    ((100.0,600.0,250,5),(190,180,80),1),
+                    ((100.0,600.0,250,5),(190,180,80),0),
                     ((1250.0,600.0,250,5),(190,180,80),0)
                 ],
                 'background' : [
