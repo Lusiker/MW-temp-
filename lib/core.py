@@ -10,7 +10,7 @@ import lib.player
 class Core():
     '''
         Core object handles all the screen objects and the player, there is also
-        a event processor object that process the events.
+        an event processor object that process the events.
     '''
     def __init__(self):
         self.setting = lib.settings.setting 
@@ -29,7 +29,7 @@ class Core():
 
     def screen_initialize(self,event_queue):
         '''
-            the function initialize all screen objects in the screen module
+            this function initializes all screen objects in the screen module
             throung a list holding all the constructor of the screens
         '''
         self.screen_list = []
@@ -42,7 +42,7 @@ class Core():
     
     def set_player(self,new_player):
         '''
-            this function set the player in all screens whenever it is invoked
+            this function sets the player in all screens whenever it is invoked
         '''
 
         self.player = new_player
@@ -53,7 +53,7 @@ class Core():
     def screen_switch(self,name):
         '''
             this function changes current screen by passing in the name string in.
-            it travers the screen list to find the same name, then sets the found sceen
+            it traverses the screen list to find the same name, then sets the found screen
             to self.current_screen
         '''
         for screen in self.screen_list:
